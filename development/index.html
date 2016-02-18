@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>LDSBC Library</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<!-- controls -->
+	
+	<div class="controls">
+		<div class="button" id="previous"></div>
+		<div class="button" id="mute-loud"></div>
+		<div class="button" id="play-pause"></div>
+		<div class="button" id="next"></div>
+	</div>
+	
+	<div class="content" id="container">
+
+		<!-- frame1 -->
+		<div id="graphic-01a" class="graphic full-cover zoom-in"></div>
+		<div id="graphic-01b" class="graphic full-cover zoom-in off-right"></div>
+		<div id="graphic-01c" class="graphic full-cover zoom-in off-right"></div>
+		<div id="graphic-01d" class="graphic full-cover off-right"></div>
+		<div id="graphic-01e" class="graphic full-cover zoom-out hidden parallax-effect"></div>
+		<div id="textbox-01" class="text-box"></div>
+
+		<!-- frame2 -->
+		<div id="graphic-02" class="graphic zoom-out hidden"></div>
+		<div id="textbox-02" class="text-box"></div>
+	</div>
+
+	<!-- testing -->
+	<div style="display:none" id="diagnostic-panel"></div>
+
+	<script src='./js/vendor/fastclick.min.js'></script>
+	<script src='./js/vendor/howler.min.js'></script>
+	<script src="./JSON/frame_data.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
